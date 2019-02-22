@@ -1,0 +1,233 @@
+# Tested on Deeptest release 1.12.0
+cbmcArguments:
+  do-not-test-methods-with-access: [ private ]
+  java-generate-no-comments: true
+  no-trivial-tests: true
+  string-printable: true
+units:
+  - target:
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/scorecompiler/DefaultExternalExecutionStepFactory.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/scorecompiler/DefaultExternalExecutionStepFactory.java
+    # Child of DefaultExternalExecutionStepFactory.class
+    - dir: cloudslang-entities/target/classes
+      file: io/cloudslang/lang/entities/ResultNavigation.class
+      sourceDir: cloudslang-entities/src/main/java
+      sourceFile: io/cloudslang/lang/entities/ResultNavigation.java
+    # Child of DefaultExternalExecutionStepFactory.class
+    - dir: cloudslang-entities/target/classes
+      file: io/cloudslang/lang/entities/bindings/Argument.class
+      sourceDir: cloudslang-entities/src/main/java
+      sourceFile: io/cloudslang/lang/entities/bindings/Argument.java
+  - target:
+    - dir: cloudslang-runtime/target/classes
+      file: io/cloudslang/lang/runtime/steps/CloudSlangJavaExecutionParameterProvider.class
+      sourceDir: cloudslang-runtime/src/main/java
+      sourceFile: io/cloudslang/lang/runtime/steps/CloudSlangJavaExecutionParameterProvider.java
+  - target:
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/validator/PreCompileValidatorImpl.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/validator/PreCompileValidatorImpl.java
+    # Child of PreCompileValidatorImpl.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/Extension.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/Extension.java
+    # Child of PreCompileValidatorImpl.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/SlangTextualKeys.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/SlangTextualKeys.java
+    # Child of PreCompileValidatorImpl.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/modeller/TransformersHandler.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/modeller/TransformersHandler.java
+    # Child of PreCompileValidatorImpl.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/modeller/model/Flow.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/modeller/model/Flow.java
+    # Child of PreCompileValidatorImpl.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/modeller/model/Step.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/modeller/model/Step.java
+    # Child of PreCompileValidatorImpl.class
+    - dir: cloudslang-entities/target/classes
+      file: io/cloudslang/lang/entities/utils/ResultUtils.class
+      sourceDir: cloudslang-entities/src/main/java
+      sourceFile: io/cloudslang/lang/entities/utils/ResultUtils.java
+    # Child of PreCompileValidatorImpl.class
+    - dir: cloudslang-entities/target/classes
+      file: io/cloudslang/lang/entities/utils/SetUtils.class
+      sourceDir: cloudslang-entities/src/main/java
+      sourceFile: io/cloudslang/lang/entities/utils/SetUtils.java
+  - target:
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/modeller/TransformersHandler.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/modeller/TransformersHandler.java
+    # Child of TransformersHandler.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/CompilerConstants.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/CompilerConstants.java
+    # Child of TransformersHandler.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/modeller/result/TransformModellingResult.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/modeller/result/TransformModellingResult.java
+    # Child of TransformersHandler.class
+    - dir: cloudslang-entities/target/classes
+      file: io/cloudslang/lang/entities/SensitivityLevel.class
+      sourceDir: cloudslang-entities/src/main/java
+      sourceFile: io/cloudslang/lang/entities/SensitivityLevel.java
+  - target:
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/parser/MetadataParser.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/parser/MetadataParser.java
+    # Child of MetadataParser.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/parser/model/ParsedDescriptionData.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/parser/model/ParsedDescriptionData.java
+    # Child of MetadataParser.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/parser/utils/ParserExceptionHandler.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/parser/utils/ParserExceptionHandler.java
+    # Child of MetadataParser.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/utils/MetadataUtils.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/utils/MetadataUtils.java
+    # Child of MetadataParser.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/utils/SlangSourceUtils.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/utils/SlangSourceUtils.java
+    # Child of MetadataParser.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/validator/matcher/DescriptionPatternMatcher.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/validator/matcher/DescriptionPatternMatcher.java
+  - target:
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/parser/utils/MetadataValidatorImpl.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/parser/utils/MetadataValidatorImpl.java
+    # Child of MetadataValidatorImpl.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/parser/MetadataParser.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/parser/MetadataParser.java
+    # Child of MetadataValidatorImpl.class
+    - dir: cloudslang-compiler/target/classes
+      file: io/cloudslang/lang/compiler/parser/model/ParsedDescriptionSection.class
+      sourceDir: cloudslang-compiler/src/main/java
+      sourceFile: io/cloudslang/lang/compiler/parser/model/ParsedDescriptionSection.java
+    # Child of MetadataValidatorImpl.class
+    - dir: cloudslang-entities/target/classes
+      file: io/cloudslang/lang/entities/constants/Regex.class
+      sourceDir: cloudslang-entities/src/main/java
+      sourceFile: io/cloudslang/lang/entities/constants/Regex.java
+  - target:
+    - dir: cloudslang-runtime/target/classes
+      file: io/cloudslang/lang/runtime/steps/StepExecutionData.class
+      sourceDir: cloudslang-runtime/src/main/java
+      sourceFile: io/cloudslang/lang/runtime/steps/StepExecutionData.java
+    # Child of StepExecutionData.class
+    - dir: cloudslang-entities/target/classes
+      file: io/cloudslang/lang/entities/utils/MapUtils.class
+      sourceDir: cloudslang-entities/src/main/java
+      sourceFile: io/cloudslang/lang/entities/utils/MapUtils.java
+    # Child of StepExecutionData.class
+    - dir: cloudslang-runtime/target/classes
+      file: io/cloudslang/lang/runtime/bindings/ArgumentsBinding.class
+      sourceDir: cloudslang-runtime/src/main/java
+      sourceFile: io/cloudslang/lang/runtime/bindings/ArgumentsBinding.java
+phases:
+-
+  timeout: 60
+  cbmcArguments:
+    max-nondet-array-length: 10
+    unwind: 1
+    string-non-empty: true
+    java-assume-inputs-non-null: true
+-
+  timeout: 60
+  cbmcArguments:
+    classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
+    max-nondet-array-length: 10
+    unwind: 1
+-
+  timeout: 60
+  cbmcArguments:
+    classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
+    max-nondet-array-length: 20
+    unwind: 2
+    string-non-empty: true
+    java-assume-inputs-non-null: true
+-
+  timeout: 60
+  cbmcArguments:
+    classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
+    max-nondet-array-length: 20
+    unwind: 2
+-
+  timeout: 60
+  cbmcArguments:
+    classpath: '/tools/cbmc/models.jar:.'
+    max-nondet-array-length: 30
+    max-nondet-string-length: 10
+    unwind: 3
+    string-non-empty: true
+    java-assume-inputs-non-null: true
+-
+  timeout: 60
+  cbmcArguments:
+    classpath: '/tools/cbmc/models.jar:.'
+    max-nondet-array-length: 30
+    max-nondet-string-length: 10
+    unwind: 3
+-
+  timeout: 120
+  cbmcArguments:
+    classpath: '/tools/cbmc/models.jar:.'
+    string-non-empty: true
+    max-nondet-array-length: 30
+    max-nondet-string-length: 10
+    unwind: 4
+    load-containing-class-only: true
+    java-assume-inputs-non-null: true
+-
+  timeout: 120
+  cbmcArguments:
+    classpath: '/tools/cbmc/models.jar:.'
+    string-non-empty: true
+    max-nondet-array-length: 50
+    max-nondet-string-length: 50
+    unwind: 4
+    load-containing-class-only: true
+-
+  timeout: 120
+  cbmcArguments:
+    classpath: '/tools/cbmc/models.jar:.'
+    string-non-empty: true
+    max-nondet-array-length: 60
+    max-nondet-string-length: 60
+    unwind: 8
+    java-assume-inputs-non-null: true
+-
+  timeout: 120
+  cbmcArguments:
+    classpath: '/tools/cbmc/models.jar:.'
+    string-non-empty: true
+    max-nondet-array-length: 100
+    max-nondet-string-length: 100
+    unwind: 8
+
